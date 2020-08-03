@@ -1,8 +1,12 @@
-pragma solidity >=0.5.0 <0.6.0;
+// SPDX-License-Identifier: MIT
+// pragma solidity >=0.5.0 <0.6.0;
+pragma solidity ^0.6.9;
 
 import "./zombieattack.sol";
-import "./erc721.sol";
-import "./safemath.sol";
+// import "./erc721.sol";
+import "../node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol";
+// import "./safemath.sol";
+import "../node_modules/@openzeppelin/contracts/math/SafeMath.sol";
 
 contract ZombieOwnership is ZombieAttack, ERC721 {
 
